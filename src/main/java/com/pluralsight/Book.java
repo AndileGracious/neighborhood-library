@@ -34,10 +34,37 @@ public class Book {
         return checkedOutTo;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setCheckedout(boolean checkedout) {
+        isCheckedout = checkedout;
+    }
+
+    public void setCheckedOutTo(String checkedOutTo) {
+        this.checkedOutTo = checkedOutTo;
+    }
+    public void checkOut(String name){
+       this.checkedOutTo = name;
+       this.isCheckedout = true;
+
+    }
+    public void checkIn(){
+       this.checkedOutTo = "";
+       this.isCheckedout = false;
 
 
     }
+}
 
 
 
